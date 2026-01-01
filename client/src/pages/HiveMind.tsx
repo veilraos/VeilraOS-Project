@@ -1226,4 +1226,5 @@ export default function HiveMind() {
       </div>
     </div>
   );
+  
 }
