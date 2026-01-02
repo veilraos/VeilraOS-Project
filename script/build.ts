@@ -7,6 +7,7 @@ import { rm, readFile } from "fs/promises";
 const allowlist = [
   "@google/generative-ai",
   "axios",
+  "bs58",
   "connect-pg-simple",
   "cors",
   "date-fns",
@@ -25,6 +26,7 @@ const allowlist = [
   "passport-local",
   "pg",
   "stripe",
+  "tweetnacl",
   "uuid",
   "ws",
   "xlsx",
@@ -55,6 +57,7 @@ async function buildAll() {
     define: {
       "process.env.NODE_ENV": '"production"',
     },
+    inject: [],
     minify: true,
     external: externals,
     logLevel: "info",
